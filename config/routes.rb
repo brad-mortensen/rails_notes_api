@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  get "/" => redirect("/api/v1/users/1/notes")
   namespace :api do
     namespace :v1 do
       resources :users do
