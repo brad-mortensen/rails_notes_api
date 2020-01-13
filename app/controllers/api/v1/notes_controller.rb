@@ -1,4 +1,5 @@
 class Api::V1::NotesController < ApplicationController
+
   before_action :find_note, only: [:show, :update, :destroy]
 
   def index
